@@ -90,4 +90,16 @@ class TodoController extends Controller
             'todo' => $todo
         ]);
     }
+
+    public function check(Todo $todo)
+    {
+        $todo->update([
+            'is_completed' => !$todo->is_completed
+        ]);
+
+        return response()->json([
+            'message' => 'success updated todo',
+            'todo' => $todo
+        ]);
+    }
 }
