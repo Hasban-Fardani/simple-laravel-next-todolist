@@ -48,7 +48,10 @@ class TodoController extends Controller
      */
     public function show(Todo $todo)
     {
-        //
+        return response()->json([
+            'message' => 'success retrieved todo',
+            'todo' => $todo
+        ]);
     }
 
     /**
