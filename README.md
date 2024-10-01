@@ -1,6 +1,6 @@
 # Simple TODO List Laravel + Next JS
 
-simple CRUD todolist using laravel 11, Next JS 14.x and mysql database.
+simple CRUD todolist using laravel 11, Next JS 14.x and mysql or sqlite database.
 
 ## Preview
 
